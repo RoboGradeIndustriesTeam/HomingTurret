@@ -1,4 +1,4 @@
-# Турель с самонаведением ArduinoDay 2021
+# Турель с самонаведением ArduinoDay 2021 [созданная им](https://github.com/TheEnderOfficial)
 
 Для конкурса [Arduino Day 2021](https://vk.com/arduinday2021_rostov_on_don)
 
