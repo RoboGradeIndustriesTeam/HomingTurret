@@ -6,7 +6,7 @@
 # Установка прошивки
 [Ссылка на репозиторий прошивки](https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021/tree/arduino)
 
-Для прошивки требуется Arduino IDE скачать можно с сайта [Arduino](https://arduino.cc)
+Для прошивки требуется Arduino IDE, скачать можно с сайта [Arduino](https://arduino.cc)
 ```
 git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021
 ```
