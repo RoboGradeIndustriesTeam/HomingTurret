@@ -4,11 +4,11 @@
 
 
 # Установка прошивки
-[Ссылка на репозиторий прошивки](https://github.com/TheEnderOfficial/ArduinoDay-2021/tree/arduino)
+[Ссылка на репозиторий прошивки](https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021/tree/arduino)
 
 Для прошивки требуется Arduino IDE скачать можно с сайта [Arduino](https://arduino.cc)
 ```
-git clone --single-branch -b arduino https://github.com/TheEnderOfficial/ArduinoDay-2021
+git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021
 ```
 Откройте Arduino IDE
 
@@ -26,7 +26,7 @@ git clone --single-branch -b arduino https://github.com/TheEnderOfficial/Arduino
 
 Важно указать галоку Add Python To Path
 ```
-git clone https://github.com/TheEnderOfficial/ArduinoDay-2021.git
+git clone https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021
 ```
 ```
 cd ArduinoDay-2021
@@ -36,7 +36,7 @@ pip install -r reqs.txt
 ```
 
 # Запуск программы
-Перейдите в папку ArduinoDay-2021
+Перейдите в папку Pshennikov-ArduinoDay2021
 
 И пропишите
 ```
