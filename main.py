@@ -5,8 +5,9 @@ import glob
 import qt.design
 import qt.port
 import pyzbar.pyzbar as pyzbar
-
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 from PyQt5.QtWidgets import QWidget, QLabel, QApplication
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import QThread, Qt, pyqtSignal, pyqtSlot
@@ -21,25 +22,53 @@ speeds = ['1200','2400', '4800', '9600', '19200', '38400', '57600', '115200']
 
 class Thread(QThread):
     changePixmap = pyqtSignal(QImage)
-
+    teamID = int(os.getenv('teamID'))
+    robotID = int(os.getenv('robotID'))
     def __init__(self, port, parent=None):
         super().__init__(parent)
-
-        ser = serial.Serial(port, int(9600))
+        try:
+            ser = serial.Serial(port, int(9600))
+        except Exception:
+            ser = None
         self.ser = ser
 
     def run(self):
-        cap = cv2.VideoCapture(1)
+        cap = cv2.VideoCapture(0)
         x2, y2 = cap.get(3) // 2, cap.get(4) // 2
         while True:
             ret, frame = cap.read()
 
             decodedObjects = pyzbar.decode(frame)
             for obj in decodedObjects:
-                print(obj)
                 x, y, w, h = obj.rect
-                cv2.putText(frame, obj.data, (x, y), font, 15, (0, 255, 0))
-                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 5)
+                x1, y1 = x, y
+                robotID = obj.data.split(b',')[0]
+                teamID = int(obj.data.split(b',')[1]) 
+                
+                color = (0, 255, 0)
+                if teamID != self.teamID: color = (0, 0, 255)
+                if teamID == self.teamID: color = (255, 0, 0)    
+                if self.ser != None:
+                    if x1 < x2: self.parent().left()
+                    if x1 > x2: self.parent().right()
+                    if y1 > y2: self.parent().up()
+                    if y1 < y2: self.parent().down()
+                    if x1 == x2 and y1 == y2: self.parent().shoot()
+                else:
+                    if x1 < x2: print("left")
+                    if x1 > x2: print("right")
+                    if y1 > y2: print("up")
+                    if y1 < y2: print("down")
+                    if x1 == x2 and y1 == y2: print("shoot")
+                team2Msg = "None"
+                if teamID != self.teamID: team2Msg = "Enemy"
+                if teamID == self.teamID: team2Msg = "Confe"
+                robotIDMsg = "Robot: " + str(int(robotID))
+                teamMsg = "Team: " + str(teamID)
+                cv2.putText(frame, team2Msg, (x, y - 100), font, 1.5, (255, 0, 0))
+                cv2.putText(frame, robotIDMsg, (x, y - 50), font, 1.5, (255, 0, 0))
+                cv2.putText(frame, teamMsg, (x, y), font, 1.5, (255, 0, 0))
+                cv2.rectangle(frame, (x, y), (x + w, y + h), color)
 
 
             key = cv2.waitKey(1)
