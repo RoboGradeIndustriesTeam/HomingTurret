@@ -17,13 +17,10 @@ import serial.tools.list_ports
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 speeds = ['1200','2400', '4800', '9600', '19200', '38400', '57600', '115200']
-
-
+face_cascade = cv2.CascadeClassifier('face.xml')
 
 class Thread(QThread):
     changePixmap = pyqtSignal(QImage)
-    teamID = int(os.getenv('teamID'))
-    robotID = int(os.getenv('robotID'))
     def __init__(self, port, parent=None):
         super().__init__(parent)
         try:
@@ -37,51 +34,36 @@ class Thread(QThread):
         x2, y2 = cap.get(3) // 2, cap.get(4) // 2
         while True:
             ret, frame = cap.read()
+            if ret:
+                    rgbImage = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                    h, w, ch = rgbImage.shape
+                    bytesPerLine = ch * w
+                    convertToQtFormat = QImage(rgbImage.data, w, h, bytesPerLine, QImage.Format_RGB888)
+                    p = convertToQtFormat.scaled(640, 480, Qt.KeepAspectRatio)
+                    self.changePixmap.emit(p)
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-            decodedObjects = pyzbar.decode(frame)
-            for obj in decodedObjects:
-                x, y, w, h = obj.rect
+            faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+            img = frame
+            for (x, y, w, h) in faces:
                 x1, y1 = x, y
-                robotID = obj.data.split(b',')[0]
-                teamID = int(obj.data.split(b',')[1]) 
-                
-                color = (0, 255, 0)
-                if teamID != self.teamID: color = (0, 0, 255)
-                if teamID == self.teamID: color = (255, 0, 0)    
+                #print("Faces: " + str((x + w // 2, y + h // 2)))
+                img = cv2.circle(frame, (x + w // 2, y + h // 2), 15, (255, 255, 255), 2)
+                img = cv2.putText(img, "Face: " + str((x + w // 2, y + h // 2)), (x, y), font,
+                                    1, (255, 255, 255), 2, cv2.LINE_AA)
                 if self.ser != None:
                     if x1 < x2: self.parent().left()
                     if x1 > x2: self.parent().right()
-                    if y1 > y2: self.parent().up()
-                    if y1 < y2: self.parent().down()
-                    if x1 == x2 and y1 == y2: self.parent().shoot()
+                    if y1 > y2: self.parent().down()
+                    if y1 < y2: self.parent().up()
+                    if (x1 - x2 < 5 and y1 - y2 < 5) or (x1 - x2 > -5 and y1 - y2 > -5): self.parent().shoot()
                 else:
                     if x1 < x2: print("left")
                     if x1 > x2: print("right")
-                    if y1 > y2: print("up")
-                    if y1 < y2: print("down")
+                    if y1 > y2: print("down")
+                    if y1 < y2: print("up")
                     if x1 == x2 and y1 == y2: print("shoot")
-                team2Msg = "None"
-                if teamID != self.teamID: team2Msg = "Enemy"
-                if teamID == self.teamID: team2Msg = "Confe"
-                robotIDMsg = "Robot: " + str(int(robotID))
-                teamMsg = "Team: " + str(teamID)
-                cv2.putText(frame, team2Msg, (x, y - 100), font, 1.5, (255, 0, 0))
-                cv2.putText(frame, robotIDMsg, (x, y - 50), font, 1.5, (255, 0, 0))
-                cv2.putText(frame, teamMsg, (x, y), font, 1.5, (255, 0, 0))
-                cv2.rectangle(frame, (x, y), (x + w, y + h), color)
-
-
-            key = cv2.waitKey(1)
-            if key == 27:
-                break
                 
-            if ret:
-                rgbImage = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                h, w, ch = rgbImage.shape
-                bytesPerLine = ch * w
-                convertToQtFormat = QImage(rgbImage.data, w, h, bytesPerLine, QImage.Format_RGB888)
-                p = convertToQtFormat.scaled(640, 480, Qt.KeepAspectRatio)
-                self.changePixmap.emit(p)
 
 class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
     @pyqtSlot(QImage)
