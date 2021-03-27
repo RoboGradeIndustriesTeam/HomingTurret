@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>647</width>
-    <height>530</height>
+    <width>651</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -95,14 +95,27 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>480</y>
-      <width>113</width>
+      <x>0</x>
+      <y>510</y>
+      <width>91</width>
       <height>20</height>
      </rect>
     </property>
     <property name="placeholderText">
      <string>На n Шагов</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="fireAllow">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>510</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Разрешить огонь</string>
     </property>
    </widget>
   </widget>
@@ -111,7 +124,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>647</width>
+     <width>651</width>
      <height>21</height>
     </rect>
    </property>

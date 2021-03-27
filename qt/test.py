@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'app.ui'
+# Form implementation generated from reading ui file 'qt\app.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
@@ -48,10 +48,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Software by R.G"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "SuperUbetNeuralNetworkOpeNcv"))
         self.pushButton.setText(_translate("MainWindow", "Выстрел"))
         self.pushButton_2.setText(_translate("MainWindow", "Вниз"))
         self.pushButton_3.setText(_translate("MainWindow", "Вверх"))
