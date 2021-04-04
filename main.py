@@ -4,10 +4,6 @@ import sys
 import glob
 import qt.design
 import qt.port
-import pyzbar.pyzbar as pyzbar
-import os
-from dotenv import load_dotenv
-load_dotenv()
 from PyQt5.QtWidgets import QWidget, QLabel, QApplication
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import QThread, Qt, pyqtSignal, pyqtSlot
@@ -31,7 +27,7 @@ class Thread(QThread):
 
     def run(self):
         try:
-            cap = cv2.VideoCapture(1)
+            cap = cv2.VideoCapture(0)
             x2, y2 = cap.get(3) // 2, cap.get(4) // 2
             while True:
                 ret, frame = cap.read()
