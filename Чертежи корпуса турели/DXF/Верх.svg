@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 590.60631 590.60634"
+   width="590.60632"
+   height="590.60632"
+   version="1.1"
+   id="svg35"
+   sodipodi:docname="Верх.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata39">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     id="namedview37"
+     showgrid="false"
+     inkscape:zoom="0.76613358"
+     inkscape:cx="179.13949"
+     inkscape:cy="414.54303"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g31" />
+  <defs
+     id="defs15">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path2" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path5" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path7" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path9" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="ÐÐµÑÑ" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g31"
+     transform="translate(295.30315,-827.21654)">
+    <path
+       d="m -283.46457,839.05512 h 122.83465 v -11.33858 h 37.79527 v 11.33858 H -18.897638 V 827.71654 H 0 18.897638 v 11.33858 H 122.83465 v -11.33858 h 37.79527 v 11.33858 h 122.83465 v 122.83464 h 11.33858 v 37.79528 H 283.46457 V 1103.622 h 11.33858 v 18.8977 18.8976 h -11.33858 v 103.937 h 11.33858 v 37.7953 h -11.33858 v 122.8347 H 160.62992 v 11.3385 h -37.79527 v -11.3385 H 18.897638 v 11.3385 H 0 -18.897638 v -11.3385 H -122.83465 v 11.3385 h -37.79527 v -11.3385 h -122.83465 v -122.8347 h -11.33858 v -37.7953 h 11.33858 v -103.937 h -11.33858 v -18.8976 -18.8977 h 11.33858 V 999.68504 h -11.33858 v -37.79528 h 11.33858 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path17" />
+    <path
+       d="m 116.22047,1122.5197 a 116.22047,116.22047 0 1 0 -232.44094,0 116.22047,116.22047 0 1 0 232.44094,0 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path19" />
+    <path
+       d="m 96.377953,1213.2283 a 5.6692915,5.6692915 0 1 0 -11.338583,0 5.6692915,5.6692915 0 1 0 11.338583,0 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path21" />
+    <path
+       d="m 96.377953,1031.811 a 5.6692915,5.6692915 0 1 0 -11.338583,0 5.6692915,5.6692915 0 1 0 11.338583,0 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path23" />
+    <path
+       d="m -85.03937,1031.811 a 5.6692915,5.6692915 0 1 0 -11.338583,0 5.6692915,5.6692915 0 1 0 11.338583,0 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path25" />
+    <path
+       d="m -85.03937,1213.2283 a 5.6692915,5.6692915 0 1 0 -11.338583,0 5.6692915,5.6692915 0 1 0 11.338583,0 z"
+       style="fill:none;stroke:#ff0000;stroke-opacity:1"
+       id="path27" />
+    <use
+       xlink:href="#%C3%90%C2%92%C3%90%C2%B5%C3%91%C2%80%C3%91%C2%85"
+       transform="translate(249.449,-113.386)"
+       id="use29"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%"
+       style="stroke:#ff0000;stroke-opacity:1" />
+    <image
+       width="123.14394"
+       height="47.488056"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqoAAAEHCAYAAABm72THAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA
+GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAACO5JREFUeJzt2r+rpGcdxuHnmXPO
+gnEJcgxaJBa7NsFC1KAWFhbaCbHJxh+wTcAVEQRZdOdsIaOQ3VlIELIWUdBCSeMWohYWYmHnD7Ax
+AVk0IskqpjAgRM9sMvO1spBEcuDM7nOfmev6C+6XZ+adD+87vcEABwcHH62qp1trD47ewubrvf+j
+qp6az+dfH71lHS5cuLC3v7//dGvt0dba6dF72AqvtdZ+3Xt/7OrVqzdHj2F7TEYPYPucO3dup6p+
+2EQqd0lV7bfWZtPp9OOjt6zD/v7+51trjzWRyt2z21r7SFV9b/QQtotQ5a47e/bs/a21d4zewVZ6
+aPSAdaiqD4zewNb60OgBbBehyl23t7e3M3oD26mqNuKz13t372aU3dED2C5udgAARBKqAABEEqoA
+AEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABE
+EqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKq
+AABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAA
+RBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQSqgAARBKqAABEEqoAAEQS
+qgAARBKqAMBRrUYPYLvsjh4AG+an8/n84dEjjuPSpUuf7b0/M3oHEOm50QPYLp6oAgBH8beq+sLo
+EWwXT1QBiNF7/2RVPTt6B/9rZ2dnefPmzRdv3LixHL2F7SJUAYhRVbfm8/nzo3cAGbz6BwAgklAF
+ACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAg
+klAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQ
+BQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUA
+IJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAIJJQBQAgklAFACCSUAUAINLu6AGwYT42nU7/
+NHrEMZ0ePQAAWhOqsG73tNbOjh4BAJvAq38AACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUA
+ACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAi
+CVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglV
+AAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAA
+IglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAiCVUAACIJVQAAIglVAAAi7Y4eAACb
+5PLly+9cLpef672fHr1lnarql9euXfvZ6B1sF6EKa9R7/0VVXRi94zhWq9XDk8nkm6N3wEm1Wq2+
+23v/xOgd69Z7/+rly5ffe+XKlWdHb2F7CFVYo6r613w+f370juO4dOnSS6M3wAn3wOgBd0hfrVYP
+tNaEKneN/6gCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJ
+qAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagC
+ABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQ
+SagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmoAgAQSagCABBJqAIAEEmo
+AgAQSagCABBJqAIAEGl39AAA+K/e+/3T6fTl0TuO6dToAby52Wx27+Hh4X2jd/B6Ozs7rz7++OMv
+ttZqdzabTRaLxfnW2geram/0OF6v9/5Sa+2Zq1ev/mH0FoA7qap+PHoDm202m+0uFosfHB4ePtq8
+WY60XC7bdDq91Xv/1O5isXiqqr44ehT/X1W11tqXp9Pp++bz+R9H7wFgO1XViX8CuVgsPlNVnx69
+gzd1f1V9e1JV50cv4UjeWlWPjB4BwPbqvb9r9IY1eHD0AI7sPZPW2r2jV3A0vXdnBcAwvfc+esNx
+VdWJv4Yt0v03AwCASEIVAIBIQhUAgEhCFQCASEIVAIBIQhUAgEhCFQCASEIVAIBIQhUAgEhCFQCA
+SEIVAIBIQhUAgEhCFQCASEIVAIBIQhUAgEhCFQCASEIVAIBIQhUAgEhCFQA4qhdGD2C7CFUA4Eiq
+6u+jN7BdhCoAAJGEKgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoAAJGE
+KgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoA
+AJGEKgAAkYQqAACRhCoAAJGEKgAAkYQqAACRhCoAAJGEKgAAkSattcXoERzZRpxVVb02esOdUlXL
+0RvWYGPPZzKZbMq1bcLnjJPpxH+HquqF0Rs4sr9MWms/H72CI6mq2oiz2tvbu9Va++voHXdC7/1X
+ozccV+/9d20DfozeyGq1OvHn01prVfWb0RvYSv/uvf9+9IjjWi6X32+t/Xb0Dt7UYWvtK/3ixYv3
+nTp16huttYeqamf0Kt7Qy62178zn8xujh6zLwcHBh1tr36qqd4/esiaL1tpPXnnllS9dv379xD/5
+Pjg4OF9VX2utvX30ljX5Z2vt+nw+f3L0kHWYzWa7h4eHT7bWHmmtvWX0ntbaPVV1qvfeRw/hzqiq
+P/feL87n8x+N3rIO586d2zlz5sz7J5PJ20Zv4fUmk8ny9u3bzz3xxBMv/Qcj4SnrdjplKwAAAABJ
+RU5ErkJggg==
+"
+       id="image880"
+       x="-263.46457"
+       y="1338.4962"
+       style="stroke:#ff0000;stroke-opacity:1" />
+  </g>
+  <desc
+     id="desc33">Верх.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+</svg>
