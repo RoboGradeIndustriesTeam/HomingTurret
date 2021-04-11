@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SuperUbetNeuralNetworkOpeNcv</string>
+   <string>Software by R.G.i.T</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -116,6 +116,19 @@
     </property>
     <property name="text">
      <string>Разрешить огонь</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="auto_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>510</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Разрешить автонаведение</string>
     </property>
    </widget>
   </widget>

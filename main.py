@@ -12,7 +12,6 @@ from PyQt5.QtGui import QImage, QPixmap
 import serial.tools.list_ports
 
 font = cv2.FONT_HERSHEY_SIMPLEX
-speeds = ['1200', '2400', '4800', '9600', '19200', '38400', '57600', '115200']
 face_cascade = cv2.CascadeClassifier('face.xml')
 
 
@@ -45,7 +44,7 @@ class Thread(QThread):
                     img = cv2.putText(img, "Face: " + str((x + w // 2, y + h // 2)), (x, y), font,
                                       1, (255, 255, 255), 2, cv2.LINE_AA)
 
-                    if self.ser != None:
+                    if int(self.parent().auto_2.checkState()) == 2:
                         if x1 < x2: self.parent().left()
                         if x1 > x2: self.parent().right()
                         if y1 > y2: self.parent().down()
@@ -53,12 +52,6 @@ class Thread(QThread):
                         if int(self.parent().fireAllow.checkState()) == 2 and (x1 - x2 < 5 and y1 - y2 < 5) or int(
                                 self.parent().fireAllow.checkState()) == 2 and (
                                 x1 - x2 > -5 and y1 - y2 > -5): self.parent().shoot()
-                    else:
-                        if x1 < x2: print("left")
-                        if x1 > x2: print("right")
-                        if y1 > y2: print("down")
-                        if y1 < y2: print("up")
-                        if (x1 - x2 < 5 and y1 - y2 < 5) or (x1 - x2 > -5 and y1 - y2 > -5): print("shoot")
                 if ret:
                     rgbImage = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                     h, w, ch = rgbImage.shape
@@ -90,6 +83,9 @@ class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
     def shoot(self):
         if self.th.ser is not None:
             self.th.ser.write(b'p')
+            print("[INFO] Shoot")
+        else:
+            print("[ACTION] Shoot")
 
     def up(self):
         if self.th.ser is not None:
@@ -98,6 +94,9 @@ class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
                     self.th.ser.write(b'u')
             except ValueError:
                 self.th.ser.write(b'u')
+            print("[INFO] Up")
+        else:
+            print("[ACTION] Up")
 
     def down(self):
         if self.th.ser is not None:
@@ -106,6 +105,9 @@ class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
                     self.th.ser.write(b'd')
             except ValueError:
                 self.th.ser.write(b'd')
+            print("[INFO] Down")
+        else:
+            print("[ACTION] Down")
 
     def left(self):
         if self.th.ser is not None:
@@ -114,6 +116,9 @@ class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
                     self.th.ser.write(b'l')
             except ValueError:
                 self.th.ser.write(b'l')
+            print("[INFO] Left")
+        else:
+            print("[ACTION] Left")
 
     def right(self):
         if self.th.ser is not None:
@@ -122,6 +127,9 @@ class App(QtWidgets.QMainWindow, qt.design.Ui_MainWindow):
                     self.th.ser.write(b'r')
             except ValueError:
                 self.th.ser.write(b'r')
+            print("[INFO] Right")
+        else:
+            print("[ACTION] Right")
 
 
 class SelectPortWindow(QtWidgets.QMainWindow, qt.port.Ui_Dialog):

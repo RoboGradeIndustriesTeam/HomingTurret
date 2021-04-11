@@ -39,6 +39,9 @@ class Ui_MainWindow(object):
         self.fireAllow = QtWidgets.QCheckBox(self.centralwidget)
         self.fireAllow.setGeometry(QtCore.QRect(100, 510, 141, 17))
         self.fireAllow.setObjectName("fireAllow")
+        self.auto_2 = QtWidgets.QCheckBox(self.centralwidget)
+        self.auto_2.setGeometry(QtCore.QRect(220, 510, 161, 17))
+        self.auto_2.setObjectName("auto_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 651, 21))
@@ -48,10 +51,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Software by R.G"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Software by R.G.i.T"))
         self.pushButton.setText(_translate("MainWindow", "Выстрел"))
         self.pushButton_2.setText(_translate("MainWindow", "Вниз"))
         self.pushButton_3.setText(_translate("MainWindow", "Вверх"))
@@ -59,4 +61,5 @@ class Ui_MainWindow(object):
         self.pushButton_5.setText(_translate("MainWindow", "Вправо"))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "На n Шагов"))
         self.fireAllow.setText(_translate("MainWindow", "Разрешить огонь"))
+        self.auto_2.setText(_translate("MainWindow", "Разрешить автонаведение"))
 

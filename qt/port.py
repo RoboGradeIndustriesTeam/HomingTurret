@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'qt\port.ui'
+# Form implementation generated from reading ui file 'port.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
@@ -27,7 +27,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Software by R.G.i.T"))
         self.pushButton.setText(_translate("Dialog", "Подключтся"))
         self.label.setText(_translate("Dialog", "Выберите порт"))
 
