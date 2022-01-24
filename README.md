@@ -2,13 +2,16 @@
 
 Для конкурса [Arduino Day 2021](https://vk.com/arduinday2021_rostov_on_don)
 
+[Ссылка на репозиторий чертежей](https://github.com/RoboGradeIndustriesTeam/HomingTurret/tree/schemes)
+
+[Ссылка на репозиторий блок-схем (не актуально)](https://github.com/RoboGradeIndustriesTeam/HomingTurret/tree/diagrams)
 
 # Установка прошивки
 [Ссылка на репозиторий прошивки](https://github.com/RoboGradeIndustriesTeam/HomingTurret/tree/arduino)
 
 Для прошивки требуется Arduino IDE, скачать можно с сайта [Arduino](https://arduino.cc)
 ```
-git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021
+git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/HomingTurret
 ```
 Откройте Arduino IDE
 
@@ -32,7 +35,7 @@ git clone https://github.com/RoboGradeIndustriesTeam/HomingTurret
 cd ArduinoDay-2021
 ```
 ```
-pip install -r reqs.txt
+pip install opencv-python pyqt5 pyserial
 ```
 
 # Запуск программы
