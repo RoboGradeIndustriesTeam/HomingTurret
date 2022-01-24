@@ -4,7 +4,7 @@
 
 
 # Установка прошивки
-[Ссылка на репозиторий прошивки](https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021/tree/arduino)
+[Ссылка на репозиторий прошивки](https://github.com/RoboGradeIndustriesTeam/HomingTurret/tree/arduino)
 
 Для прошивки требуется Arduino IDE, скачать можно с сайта [Arduino](https://arduino.cc)
 ```
@@ -26,7 +26,7 @@ git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/
 
 Важно указать галоку Add Python To Path
 ```
-git clone https://github.com/RoboGradeIndustriesTeam/Pshennikov-ArduinoDay2021
+git clone https://github.com/RoboGradeIndustriesTeam/HomingTurret
 ```
 ```
 cd ArduinoDay-2021
@@ -36,7 +36,7 @@ pip install -r reqs.txt
 ```
 
 # Запуск программы
-Перейдите в папку Pshennikov-ArduinoDay2021
+Перейдите в папку HomingTurret
 
 И пропишите
 ```
@@ -44,7 +44,7 @@ python main.py
 ```
 
 # Технечиские характеристки
-+ Турелью - гир-бокс созданный в кружке [Robo.Grade](https://robograde.ru/)
++ Турелью - гир-бокс созданный в кружке [Robo.Grade](https://robograde.ru/) (Сайт времмено не работает)
 + Язык программирования - [Python](https://python.org/)
 + Фреймворк для распознавания лиц - [OpenCV](https://opencv.org/)
 + Фреймворк для создание графического интерфеса - [Qt](https://qt.io) и [PyQT](https://ru.wikipedia.org/wiki/PyQt)
