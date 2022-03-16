@@ -32,7 +32,7 @@ git clone --single-branch -b arduino https://github.com/RoboGradeIndustriesTeam/
 git clone https://github.com/RoboGradeIndustriesTeam/HomingTurret
 ```
 ```
-cd ArduinoDay-2021
+cd HomingTurret
 ```
 ```
 pip install opencv-python pyqt5 pyserial
